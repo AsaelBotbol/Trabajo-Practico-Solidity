@@ -8,3 +8,18 @@ contract Estudiante{
     address private _docente;
     mapping (string => uint8) private _notas_materias;
     string[] private _materias;
+    
+    constructor(string memory nombre_, string memory apellido_, string memory curso_){
+        _nombre = nombre_;
+        _apellido = apellido_;
+        _curso = curso_;
+        _docente = msg.sender;
+    }
+
+    function apellido() public view returns(string memory){
+        return _apellido;
+    }
+
+    function nombre_completo() public view returns(string memory){
+        return string(bytes.concat(bytes(_nombre)," ", bytes(_apellido)));
+    }
