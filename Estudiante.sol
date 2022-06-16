@@ -28,7 +28,7 @@ contract Estudiante{
         return _curso;
     }
     
-    function set_nota_materia(uint8 nota_, string memory materia_) public{
+    function setnota_materia(uint8 nota_, string memory materia_) public{
         require(msg.sender == _docente, "Solo el docente del alumno puede cambiar las notas");
         require(nota_ <= 100, "La nota tiene que ser del 1 al 100");
         require(nota_ >= 1, "La nota tiene que ser del 1 al 100");
