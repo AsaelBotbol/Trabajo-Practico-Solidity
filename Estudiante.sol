@@ -59,10 +59,10 @@ contract Estudiante{
         }
     }
     
-    function promedio(uint8 bimestre_) public view returns(uint){
+    function promedio(uint8) public view returns(uint){
         uint promedio_ = 0;
         for(uint8 i = 0; i < _materias.length;i++){
-            promedio_ += _notas_materias[bimestre_][_materias[i]];
+            promedio_ += _notas_materias[_materias[i]];
         }
         return promedio_ / _materias.length;
     }
