@@ -1,1 +1,4 @@
-# Un archivo Readme.MD con el link a etherscan del hash de cada smart contract corriendo en Rinkeby, el nombre e inicial de los integrantes, y lo que les parezca pertinente agregar.
+etherscan: https://rinkeby.etherscan.io/tx/0x450b01470d99e1bcee170dc95960d052cff5f22297e930f298788a8df6022d8a
+
+Asael B. y Federico S.
+
